@@ -1,5 +1,3 @@
-console.log("hello");
-
 const game = {
   title: 'Guess the Number!',
   biggestNum: 100,
@@ -11,7 +9,7 @@ const game = {
       (this.biggestNum - this.smallestNum + 1)) + this.smallestNum;
     do {
       this.prevGuesses.push(this.getGuess());
-      this.render();
+      this.render();  
     } while (this.prevGuesses[this.prevGuesses.length-1] !== this.secretNum);
   },
   getGuess: function() {
@@ -34,8 +32,4 @@ const game = {
   alert(message);
   },
 }
-
-
-game.play();
-
-
+//game.play();
